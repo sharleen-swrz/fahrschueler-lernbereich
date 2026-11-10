@@ -6,69 +6,55 @@
   <meta name="theme-color" content="#0b0c0e">
   <title>Fahrschul Arena | Lernbereich</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .section-title{
-      margin:16px 4px 8px;
-      font-size:11px;
-      font-weight:800;
-      letter-spacing:.16em;
-      color:#c83b30;
-    }
-    .content .section-title:first-child{margin-top:4px}
-  </style>
 </head>
-<body class="locked">
-<section id="intro">
+<body class="home-page">
+<header class="site-header">
+  <a class="brand site-brand" href="index.html">FAHRSCHUL <em>ARENA</em></a>
+  <nav class="site-navigation" aria-label="Hauptnavigation">
+    <div class="nav-dropdown">
+      <a class="learning-link" href="uebersicht.html">Lernbereich</a>
+      <ul class="nav-flyout" id="learning-flyout">
+        <li><a href="klasse-b.html">Klasse B</a></li>
+        <li><a href="klasse-a.html">Klasse A</a></li>
+        <li><a href="klasse-be.html">Klasse BE</a></li>
+      </ul>
+    </div>
+    <a href="impressum.html">Impressum</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+<main>
+<section id="intro" aria-label="Dein Lernbereich">
   <div class="hero"></div>
   <div class="shade"></div>
 
   <div class="introText">
-    <p class="brand">FAHRSCHUL <em>ARENA</em></p>
     <h1>DEIN LERNBEREICH</h1>
   </div>
 
-  <button id="enter">ZUM LERNBEREICH <span>→</span></button>
+  <a id="enter" href="uebersicht.html">ZUR ÜBERSICHT <span>→</span></a>
 </section>
 
-<main id="learn">
-  <header>
-    <p class="brand dark">FAHRSCHUL <em>ARENA</em></p>
-    <h2>Lernbereich</h2>
-    <p>Wähle deine Führerscheinklasse.</p>
-  </header>
-
-  <div class="classes">
-    <article>
-      <button class="toggle"><span><small>Motorrad</small>Klasse A</span><b>+</b></button>
-      <div class="content">
-        <div class="section-title">PDF-DOKUMENTE</div>
-        <a href="./Grundfahraufgaben%20KlasseA.pdf" target="_blank"><i>PDF</i><span><strong>Grundfahraufgaben Klasse A</strong><small>Slalom, Bremsen, Ausweichen & Stop and Go</small></span></a>
-        <a href="./Technikfragen%20KlasseA.pdf" target="_blank"><i>PDF</i><span><strong>Technikfragen Klasse A</strong><small>Technikfragen zur Prüfungsvorbereitung</small></span></a>
-        <div class="section-title">VIDEOS</div>
-        <a href="#"><i>▶</i><span><strong>Erklärungen & Abläufe</strong><small>Video hinzufügen</small></span></a>
-      </div>
-    </article>
-    <article>
-      <button class="toggle"><span><small>PKW</small>Klasse B</span><b>+</b></button>
-      <div class="content">
-        <div class="section-title">PDF-DOKUMENTE</div>
-        <a href="./Grundfahraufgaben%20KlasseB.pdf" target="_blank"><i>PDF</i><span><strong>Grundfahraufgaben Klasse B</strong><small>Parken, Umkehren, Rückwärtsfahren & Gefahrenbremsung</small></span></a>
-        <a href="./Technikfragen%20KlasseB.pdf" target="_blank"><i>PDF</i><span><strong>Technikfragen Klasse B</strong><small>Technikfragen zur Prüfungsvorbereitung</small></span></a>
-        <div class="section-title">VIDEOS</div>
-        <a href="#"><i>▶</i><span><strong>Erklärungen & Demonstrationen</strong><small>Video hinzufügen</small></span></a>
-      </div>
-    </article>
-    <article>
-      <button class="toggle"><span><small>Anhänger</small>Klasse BE</span><b>+</b></button>
-      <div class="content">
-        <div class="section-title">PDF-DOKUMENTE</div>
-        <a href="./Klasse%20BE%20Verbinden%20Trennen%20Bogen.pdf" target="_blank"><i>PDF</i><span><strong>Klasse BE – Abläufe</strong><small>Ankuppeln, Abkuppeln & Rückwärts links Bogen</small></span></a>
-        <div class="section-title">VIDEOS</div>
-        <a href="#"><i>▶</i><span><strong>Abläufe am Anhänger</strong><small>Video hinzufügen</small></span></a>
-      </div>
-    </article>
-  </div>
+<section class="intro-boxes" aria-labelledby="steps-title">
+  <h2 id="steps-title" class="steps-title">Dein Weg zum Führerschein</h2>
+  <article class="intro-box">
+    <span class="box-number" aria-hidden="true">01</span>
+    <h3>Kontakt aufnehmen</h3>
+    <img class="step-icon" src="icons/kontakt.svg" alt="" width="80" height="80">
+  </article>
+  <article class="intro-box">
+    <span class="box-number" aria-hidden="true">02</span>
+    <h3>Termin vereinbaren</h3>
+    <img class="step-icon" src="icons/termin.svg" alt="" width="80" height="80">
+  </article>
+  <article class="intro-box">
+    <span class="box-number" aria-hidden="true">03</span>
+    <h3>Führerschein bestehen</h3>
+    <img class="step-icon" src="icons/fuehrerschein.svg" alt="" width="80" height="80">
+  </article>
+</section>
 </main>
-<script src="script.js"></script>
+
+<script src="reveal.js"></script>
 </body>
 </html>
