@@ -867,65 +867,6 @@ body:has(.mobile-drawer[open]) {
   }
 }
 
-.hall-of-fame-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.hall-of-fame-gallery figure {
-  display: grid;
-  place-items: center;
-  min-width: 0;
-  margin: 0;
-  padding: 14px;
-  background: #fff;
-  border: 1px solid #dededb;
-  border-radius: 10px;
-  box-shadow: 0 7px 24px rgba(0, 0, 0, .045);
-}
-
-.hall-of-fame-gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: contain;
-}
-
-.hall-of-fame {
-  width: 100%;
-  max-width: none;
-  min-height: 100vh;
-  min-height: 100lvh;
-  padding: calc(var(--header-height) + 20px) 20px 20px;
-}
-
-.hall-of-fame > header {
-  padding: 0 4px 24px;
-}
-
-@media (max-width:600px) {
-  .hall-of-fame-gallery {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .hall-of-fame-gallery figure {
-    height: calc(100svh - var(--header-height) - 150px);
-    height: calc(100lvh - var(--header-height) - 150px);
-  }
-
-  .hall-of-fame-gallery img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    max-height: none;
-    object-fit: contain;
-  }
-}
-
-
 .home-page:not(.locked) {
   height: 100vh !important;
   height: 100lvh !important;
